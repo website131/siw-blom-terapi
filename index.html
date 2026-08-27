@@ -125,7 +125,7 @@
   .creds svg{ width:16px; height:16px; color:var(--blue-d); flex:none; margin-top:5px; }
   .hero-fig{ position:relative; }
   .hero-fig img{ width:100%; height:clamp(300px,44vw,540px); object-fit:cover; border-radius:2px; }
-  .hero-fig .yrs{ position:absolute; bottom:-22px; left:-22px; background:var(--navy); color:var(--linen); padding:20px 26px; border-radius:2px; }
+  .hero-fig .yrs{ position:absolute; top:20px; right:20px; background:var(--navy); color:var(--linen); padding:20px 26px; border-radius:2px; box-shadow:0 12px 30px rgba(31,42,56,.22); }
   .hero-fig .yrs b{ font-family:'Cormorant Garamond'; font-size:2.2rem; display:block; line-height:1; }
   .hero-fig .yrs span{ font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--blue-soft); }
 
@@ -163,15 +163,20 @@
   .tcard .pr small{ font-family:'Inter'; font-size:.76rem; color:var(--muted); display:block; font-weight:400; }
 
   /* Sexologi – egen sektion, saklig ton */
-  .sexologi{ background:var(--navy); color:var(--linen); }
+  .sexologi{ background:#71818A; color:#fff; }
   .sexologi .wrap{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,5vw,76px); align-items:center; }
-  .sexologi h2{ color:var(--linen); font-size:clamp(2rem,4.4vw,3.2rem); margin:20px 0 22px; }
-  .sexologi h2 em{ font-style:italic; color:var(--blue-soft); }
-  .sexologi p{ color:rgba(250,247,242,.8); font-weight:300; margin-bottom:18px; }
+  .sexologi h2{ color:#fff; font-size:clamp(2rem,4.4vw,3.2rem); margin:20px 0 22px; }
+  .sexologi h2 em{ font-style:italic; color:#E9DFD2; }
+  .sexologi p{ color:rgba(255,255,255,.88); font-weight:300; margin-bottom:18px; }
   .taglist{ display:flex; flex-wrap:wrap; gap:9px; margin-top:24px; }
   .taglist span{ border:1px solid var(--line-d); border-radius:99px; padding:8px 16px; font-size:.84rem; color:rgba(250,247,242,.88); }
-  .sexologi .note{ margin-top:26px; padding-top:22px; border-top:1px solid var(--line-d); font-size:.9rem; color:rgba(250,247,242,.7); font-weight:300; }
-  .sexologi-fig img{ width:100%; height:clamp(300px,42vw,500px); object-fit:cover; border-radius:2px; }
+  .sexologi .note{ margin-top:28px; padding:18px 20px; border:1px solid rgba(255,255,255,.34); background:rgba(255,255,255,.11); color:#fff; }
+  .sexologi .note-label{ display:block; margin-bottom:6px; font-size:.68rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:#F1E8DC; }
+  .sexologi .note-text{ display:block; font-size:1.02rem; line-height:1.55; font-weight:400; }
+  .sexologi .note-text strong{ color:#fff; font-weight:700; }
+  .sexologi-fig{ position:relative; overflow:hidden; border-radius:2px; }
+  .sexologi-fig::after{ content:""; position:absolute; inset:0; pointer-events:none; box-shadow:inset 0 0 55px rgba(68,84,93,.18); }
+  .sexologi-fig img{ display:block; width:100%; height:clamp(300px,42vw,500px); object-fit:cover; object-position:center; filter:saturate(.62) contrast(.94); opacity:.95; }
 
   /* Om mig */
   .om .wrap{ display:grid; grid-template-columns:.86fr 1.14fr; gap:clamp(32px,5vw,76px); align-items:center; }
@@ -267,7 +272,7 @@
     body{ padding-bottom:78px; }
     nav{ height:72px; }
     .brand b{ font-size:1.3rem; }
-    .hero-fig .yrs{ left:0; bottom:-16px; padding:16px 20px; }
+    .hero-fig .yrs{ top:12px; right:12px; padding:15px 18px; }
     .hero-btns{ width:100%; } .hero-btns .btn{ flex:1; min-width:0; padding:15px 16px; }
     .reasons{ grid-template-columns:1fr; }
     .tgrid{ grid-template-columns:1fr; }
@@ -336,7 +341,7 @@
       </div>
     </div>
     <div class="hero-fig reveal">
-      <img src="https://images.unsplash.com/photo-1615194787278-25ca9b7c5a16?auto=format&fit=crop&w=1100&q=80" alt="Ett lugnt samtalsrum" loading="eager" decoding="async">
+      <img src="https://images.unsplash.com/photo-1723924880480-a5433b2819ca?auto=format&fit=crop&w=1600&q=85" alt="Hav, klippor och fyr i Öckerös skärgård på västkusten" loading="eager" decoding="async">
       <div class="yrs"><b>50 år</b><span>i människovårdande yrken</span></div>
     </div>
   </div>
@@ -389,32 +394,26 @@
       <div class="tcard reveal">
         <span class="n">01</span><h3>Individuella samtal</h3>
         <p>Ett enskilt samtalsrum för dig — vid nedstämdhet, ångest, utmattning, livskris eller när något behöver sättas ord på.</p>
-        <div class="pr">950 kr <small>60 minuter</small></div>
       </div>
       <div class="tcard reveal">
         <span class="n">02</span><h3>Parsamtal</h3>
         <p>För er som vill förstå varandra bättre. Jag arbetar bland annat med emotionellt fokuserad terapi (EFT) för par.</p>
-        <div class="pr">1 200 kr <small>75 minuter</small></div>
       </div>
       <div class="tcard reveal">
         <span class="n">03</span><h3>Samtal för ungdom</h3>
         <p>Ett eget rum för dig som är ung, med samma trygghet och tystnadsplikt.</p>
-        <div class="pr">500 kr <small>60 minuter</small></div>
       </div>
       <div class="tcard reveal">
         <span class="n">04</span><h3>Telefonrådgivning</h3>
         <p>Korta frågor eller en första kontakt innan du bestämmer dig — utan att boka ett helt samtal.</p>
-        <div class="pr">200 kr <small>30 minuter</small></div>
       </div>
       <div class="tcard reveal">
         <span class="n">05</span><h3>Handledning</h3>
         <p>Individuellt eller i grupp, för dig i människovårdande yrke. Godkänd handledare även för sexologiska frågeställningar.</p>
-        <div class="pr">Offert <small>Pris enligt överenskommelse</small></div>
       </div>
       <div class="tcard reveal">
         <span class="n">06</span><h3>Utbildningsterapi</h3>
         <p>Egenterapi i samband med människovårdande utbildning.</p>
-        <div class="pr">950 kr <small>60 minuter</small></div>
       </div>
     </div>
   </div>
@@ -439,10 +438,13 @@
         <span>Könsidentitet</span>
         <span>Sexuellt trauma</span>
       </div>
-      <div class="note">Jag samarbetar med <b style="color:var(--linen);font-weight:500">Falck HK</b> och <b style="color:var(--linen);font-weight:500">S:t Lukas</b>.</div>
+      <div class="note">
+        <span class="note-label">Samarbetspartners</span>
+        <span class="note-text">Jag samarbetar med <strong>Falck HK</strong> och <strong>S:t Lukas</strong>.</span>
+      </div>
     </div>
     <div class="sexologi-fig reveal">
-      <img src="https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?auto=format&fit=crop&w=1000&q=80" alt="Stillsam horisont" loading="lazy" decoding="async">
+      <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=82" alt="Två människor som håller varandras händer" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
