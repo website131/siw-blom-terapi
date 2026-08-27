@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siw Blom — Leg. psykoterapeut &amp; klinisk sexolog i Varberg</title>
+<meta name="description" content="Psykoterapi och sexualterapeutisk mottagning i Varberg. Leg. psykoterapeut och auktoriserad klinisk sexolog med 50 års erfarenhet. Individuella samtal, parsamtal och handledning — även digitalt.">
+<meta name="theme-color" content="#1F2A38">
+<link rel="canonical" href="https://siwblomterapi.se/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:site_name" content="Siw Blom Terapi o Samtalsrum">
+<meta property="og:title" content="Siw Blom — Leg. psykoterapeut &amp; klinisk sexolog i Varberg">
+<meta property="og:description" content="Ett tryggt samtalsrum för dig, er som par eller dig som söker handledning.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1615194787278-25ca9b7c5a16?auto=format&fit=crop&w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org","@type":"MedicalBusiness",
+ "additionalType":"https://schema.org/Psychiatric",
+ "name":"Siw Blom Terapi o Samtalsrum",
+ "description":"Psykoterapi och sexualterapeutisk mottagning i Varberg. Legitimerad psykoterapeut och auktoriserad klinisk sexolog enligt NACS.",
+ "image":"https://images.unsplash.com/photo-1615194787278-25ca9b7c5a16?auto=format&fit=crop&w=1200&q=80",
+ "url":"https://siwblomterapi.se/","telephone":"+46733447422","email":"siw@siwblomterapi.se","priceRange":"200-1200 SEK",
+ "address":{"@type":"PostalAddress","streetAddress":"Norrgatan 20","postalCode":"432 41","addressLocality":"Varberg","addressCountry":"SE"},
+ "areaServed":["Varberg","Halland","Digitalt i hela Sverige"],
+ "founder":{"@type":"Person","name":"Siw Blom","jobTitle":"Legitimerad psykoterapeut, auktoriserad klinisk sexolog (NACS)"}
+}
+</script>
+
+<style>
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --navy:#1F2A38;
+    --navy-2:#2A3747;
+    --blue:#7B8DB5;        /* hennes befintliga blå – förfinad */
+    --blue-d:#5D719C;
+    --blue-soft:#C3CDE2;
+    --linen:#FAF7F2;
+    --linen-2:#F2EDE5;
+    --sand:#E6DED2;
+    --ink:#2C3239;
+    --muted:#77808C;
+    --line:#E4DED4;
+    --line-d:rgba(250,247,242,.15);
+  }
+  html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+  body{ font-family:'Inter',sans-serif; color:var(--ink); background:var(--linen); line-height:1.78; -webkit-font-smoothing:antialiased; overflow-x:hidden; font-weight:400; }
+  h1,h2,h3,h4,.disp{ font-family:'Cormorant Garamond',serif; font-weight:500; line-height:1.12; letter-spacing:-.005em; }
+  .wrap{ max-width:1240px; margin:0 auto; padding:0 clamp(22px,5vw,52px); }
+  a{ color:inherit; text-decoration:none; }
+  img{ display:block; max-width:100%; }
+  ::selection{ background:var(--blue); color:#fff; }
+
+  .eyebrow{ display:inline-flex; align-items:center; gap:13px; font-size:.68rem; letter-spacing:.26em; text-transform:uppercase; font-weight:600; color:var(--blue-d); }
+  .eyebrow::before{ content:""; width:28px; height:1px; background:currentColor; opacity:.7; }
+  .eyebrow.c{ justify-content:center; }
+  .eyebrow.light{ color:var(--blue-soft); }
+
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:.6em; padding:15px 32px; border-radius:2px;
+    font-size:.88rem; font-weight:500; cursor:pointer; border:1px solid transparent; transition:.32s cubic-bezier(.2,.7,.2,1); }
+  .btn svg{ width:16px; height:16px; transition:transform .3s; }
+  .btn:hover svg{ transform:translateX(4px); }
+  .btn-navy{ background:var(--navy); color:var(--linen); }
+  .btn-navy:hover{ background:var(--navy-2); transform:translateY(-2px); }
+  .btn-blue{ background:var(--blue-d); color:#fff; }
+  .btn-blue:hover{ background:#4E6089; transform:translateY(-2px); }
+  .btn-ol{ background:transparent; color:var(--ink); border-color:var(--line); }
+  .btn-ol:hover{ border-color:var(--navy); }
+  .btn-olw{ background:transparent; color:var(--linen); border-color:rgba(250,247,242,.42); }
+  .btn-olw:hover{ background:var(--linen); color:var(--navy); }
+  .btn-linen{ background:var(--linen); color:var(--navy); }
+  .btn-linen:hover{ background:#fff; transform:translateY(-2px); }
+  a.btn.btn-navy,a.btn.btn-blue{ color:var(--linen); }
+  a.btn.btn-blue{ color:#fff; }
+
+  /* Topbar */
+  .topbar{ background:var(--navy); color:rgba(250,247,242,.72); font-size:.72rem; letter-spacing:.06em; }
+  .topbar .wrap{ display:flex; justify-content:space-between; align-items:center; height:42px; gap:14px; }
+  .topbar .r{ display:flex; gap:24px; }
+  .topbar a:hover{ color:#fff; }
+
+  /* Nav */
+  header{ position:sticky; top:0; z-index:70; background:rgba(250,247,242,.94); backdrop-filter:blur(12px); border-bottom:1px solid transparent; transition:.3s; }
+  header.scrolled{ border-bottom-color:var(--line); }
+  nav{ display:flex; align-items:center; justify-content:space-between; height:86px; gap:16px; }
+  .brand{ line-height:1.1; }
+  .brand b{ font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:600; color:var(--navy); display:block; letter-spacing:.005em; }
+  .brand small{ font-size:.56rem; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); font-weight:600; }
+  .navlinks{ display:flex; gap:32px; align-items:center; }
+  .navlinks>li{ list-style:none; position:relative; }
+  .navlinks a,.subt{ font-size:.86rem; color:var(--ink); font-weight:400; transition:.24s; background:none; border:0; font-family:'Inter';
+    cursor:pointer; display:inline-flex; align-items:center; gap:7px; padding:7px 0; position:relative; }
+  .navlinks a::after{ content:""; position:absolute; left:0; right:100%; bottom:1px; height:1px; background:var(--blue-d); transition:.34s; }
+  .navlinks a:hover,.subt:hover{ color:var(--blue-d); } .navlinks a:hover::after{ right:0; }
+  .subt .chev{ width:10px; height:10px; transition:.26s; }
+  .navlinks li.has-sub:hover .chev{ transform:rotate(180deg); }
+  .submenu{ position:absolute; top:100%; left:50%; transform:translate(-50%,10px); min-width:250px; background:#fff; border:1px solid var(--line);
+    border-radius:3px; padding:8px; list-style:none; opacity:0; visibility:hidden; pointer-events:none; transition:.26s; z-index:90; margin-top:12px;
+    box-shadow:0 22px 46px -18px rgba(31,42,56,.26); }
+  .submenu::before{ content:""; position:absolute; top:-12px; left:0; right:0; height:12px; }
+  .navlinks li.has-sub:hover .submenu,.navlinks li.has-sub:focus-within .submenu{ opacity:1; visibility:visible; pointer-events:auto; transform:translate(-50%,0); }
+  .submenu a{ display:block; padding:11px 15px; border-radius:2px; font-size:.86rem; }
+  .submenu a::after{ display:none; }
+  .submenu a:hover{ background:var(--linen-2); color:var(--blue-d); }
+  .burger{ display:none; flex-direction:column; gap:5px; cursor:pointer; padding:8px; }
+  .burger span{ width:25px; height:1.6px; background:var(--navy); border-radius:2px; }
+
+  /* HERO */
+  .hero{ position:relative; background:var(--linen-2); overflow:hidden; }
+  .hero .wrap{ display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(30px,5vw,72px); align-items:center;
+    padding-top:clamp(30px,4vw,56px); padding-bottom:clamp(44px,5vw,68px); }
+  .hero h1{ font-size:clamp(2.5rem,5.6vw,4.4rem); margin:22px 0 0; color:var(--navy); }
+  .hero h1 em{ font-style:italic; color:var(--blue-d); }
+  .hero p.lead{ font-size:clamp(1rem,1.6vw,1.14rem); color:var(--muted); max-width:480px; margin:24px 0 32px; font-weight:300; }
+  .hero-btns{ display:flex; gap:13px; flex-wrap:wrap; margin-bottom:30px; }
+  .creds{ display:flex; flex-direction:column; gap:9px; padding-top:26px; border-top:1px solid var(--line); }
+  .creds div{ display:flex; align-items:flex-start; gap:11px; font-size:.9rem; color:var(--ink); }
+  .creds svg{ width:16px; height:16px; color:var(--blue-d); flex:none; margin-top:5px; }
+  .hero-fig{ position:relative; }
+  .hero-fig img{ width:100%; height:clamp(300px,44vw,540px); object-fit:cover; border-radius:2px; }
+  .hero-fig .yrs{ position:absolute; bottom:-22px; left:-22px; background:var(--navy); color:var(--linen); padding:20px 26px; border-radius:2px; }
+  .hero-fig .yrs b{ font-family:'Cormorant Garamond'; font-size:2.2rem; display:block; line-height:1; }
+  .hero-fig .yrs span{ font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--blue-soft); }
+
+  /* Trust-rad */
+  .trust{ background:var(--navy); color:rgba(250,247,242,.86); }
+  .trust .wrap{ display:flex; align-items:center; justify-content:center; gap:clamp(16px,3.4vw,44px); flex-wrap:wrap; padding:22px 0; }
+  .trust span{ font-family:'Cormorant Garamond',serif; font-size:clamp(.98rem,1.9vw,1.2rem); font-style:italic; }
+  .trust .dot{ color:var(--blue); font-style:normal; }
+
+  section{ padding:clamp(66px,9vw,116px) 0; }
+  .sec-head{ max-width:660px; margin-bottom:clamp(36px,5vw,58px); }
+  .sec-head.c{ margin-left:auto; margin-right:auto; text-align:center; }
+  .sec-head h2{ font-size:clamp(2rem,4.4vw,3.2rem); margin-top:20px; color:var(--navy); }
+  .sec-head h2 em{ font-style:italic; color:var(--blue-d); }
+  .sec-head p{ color:var(--muted); margin-top:16px; font-weight:300; }
+
+  /* Anledningar */
+  .why .wrap{ display:grid; grid-template-columns:.92fr 1.08fr; gap:clamp(30px,5vw,74px); align-items:start; }
+  .why h2{ font-size:clamp(2rem,4.4vw,3.2rem); margin-top:20px; color:var(--navy); }
+  .why h2 em{ font-style:italic; color:var(--blue-d); }
+  .why .intro{ font-size:1.1rem; color:var(--ink); margin-bottom:26px; font-weight:300; }
+  .reasons{ display:grid; grid-template-columns:1fr 1fr; gap:0 30px; }
+  .reasons div{ display:flex; gap:12px; align-items:flex-start; padding:14px 0; border-top:1px solid var(--line); font-size:.98rem; }
+  .reasons svg{ width:16px; height:16px; color:var(--blue-d); flex:none; margin-top:6px; }
+
+  /* Mottagningen (tjänster) */
+  .tjanster{ background:var(--linen-2); }
+  .tgrid{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(16px,2vw,24px); }
+  .tcard{ background:#fff; border:1px solid var(--line); border-radius:2px; padding:clamp(28px,3vw,38px) clamp(24px,2.4vw,32px); display:flex; flex-direction:column; transition:.34s; }
+  .tcard:hover{ transform:translateY(-5px); box-shadow:0 24px 44px -24px rgba(31,42,56,.3); }
+  .tcard .n{ font-family:'Cormorant Garamond'; font-style:italic; font-size:.95rem; color:var(--blue-d); }
+  .tcard h3{ font-size:1.55rem; margin:8px 0 12px; color:var(--navy); }
+  .tcard p{ color:var(--muted); font-size:.93rem; font-weight:300; flex:1; }
+  .tcard .pr{ margin-top:22px; padding-top:18px; border-top:1px solid var(--line); font-family:'Cormorant Garamond'; font-size:1.3rem; color:var(--navy); }
+  .tcard .pr small{ font-family:'Inter'; font-size:.76rem; color:var(--muted); display:block; font-weight:400; }
+
+  /* Sexologi – egen sektion, saklig ton */
+  .sexologi{ background:var(--navy); color:var(--linen); }
+  .sexologi .wrap{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,5vw,76px); align-items:center; }
+  .sexologi h2{ color:var(--linen); font-size:clamp(2rem,4.4vw,3.2rem); margin:20px 0 22px; }
+  .sexologi h2 em{ font-style:italic; color:var(--blue-soft); }
+  .sexologi p{ color:rgba(250,247,242,.8); font-weight:300; margin-bottom:18px; }
+  .taglist{ display:flex; flex-wrap:wrap; gap:9px; margin-top:24px; }
+  .taglist span{ border:1px solid var(--line-d); border-radius:99px; padding:8px 16px; font-size:.84rem; color:rgba(250,247,242,.88); }
+  .sexologi .note{ margin-top:26px; padding-top:22px; border-top:1px solid var(--line-d); font-size:.9rem; color:rgba(250,247,242,.7); font-weight:300; }
+  .sexologi-fig img{ width:100%; height:clamp(300px,42vw,500px); object-fit:cover; border-radius:2px; }
+
+  /* Om mig */
+  .om .wrap{ display:grid; grid-template-columns:.86fr 1.14fr; gap:clamp(32px,5vw,76px); align-items:center; }
+  .om-fig img{ width:100%; height:clamp(360px,50vw,600px); object-fit:cover; object-position:center 22%; border-radius:2px; }
+  .om-cap{ margin-top:14px; font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); font-weight:600; }
+  .om h2{ font-size:clamp(2rem,4.4vw,3.2rem); margin:20px 0 22px; color:var(--navy); }
+  .om h2 em{ font-style:italic; color:var(--blue-d); }
+  .om p{ color:var(--muted); margin-bottom:17px; font-weight:300; }
+  .om .sig{ font-family:'Cormorant Garamond'; font-style:italic; font-size:1.4rem; color:var(--navy); margin-top:22px; }
+
+  /* Meriter */
+  .meriter{ background:var(--sand); }
+  .mgrid{ display:grid; grid-template-columns:repeat(2,1fr); gap:0 clamp(28px,4vw,60px); }
+  .mrow{ display:grid; grid-template-columns:26px 1fr; gap:14px; padding:16px 0; border-top:1px solid rgba(44,50,57,.14); align-items:start; }
+  .mrow .mi{ font-family:'Cormorant Garamond'; font-style:italic; font-size:.9rem; color:var(--blue-d); }
+  .mrow b{ display:block; font-weight:500; color:var(--navy); font-size:1rem; }
+  .mrow span{ color:var(--muted); font-size:.88rem; font-weight:300; }
+
+  /* Priser */
+  .ptable{ border-top:1px solid var(--line); max-width:900px; }
+  .prow{ display:grid; grid-template-columns:1fr auto; gap:20px; padding:22px 4px; border-bottom:1px solid var(--line); align-items:baseline; }
+  .prow .pn{ font-family:'Cormorant Garamond'; font-size:1.4rem; color:var(--navy); }
+  .prow .pd{ font-size:.86rem; color:var(--muted); font-weight:300; display:block; font-family:'Inter'; margin-top:2px; }
+  .prow .pp{ font-family:'Cormorant Garamond'; font-size:1.55rem; color:var(--blue-d); white-space:nowrap; }
+  .pnote{ margin-top:26px; font-size:.9rem; color:var(--muted); font-weight:300; }
+  .pnote b{ color:var(--ink); font-weight:500; }
+
+  /* Citat */
+  .quote{ background:var(--linen-2); text-align:center; }
+  .quote .wrap{ max-width:940px; }
+  .quote p{ font-family:'Cormorant Garamond',serif; font-size:clamp(1.6rem,3.6vw,2.6rem); font-style:italic; line-height:1.38; color:var(--navy); }
+  .quote .who{ font-size:.7rem; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); margin-top:24px; font-weight:600; }
+
+  /* Media + samarbeten */
+  .media .cols{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(30px,5vw,70px); }
+  .media h3{ font-size:1.5rem; color:var(--navy); margin-bottom:18px; }
+  .media ul{ list-style:none; }
+  .media li{ padding:13px 0; border-top:1px solid var(--line); font-size:.96rem; }
+  .media li a{ color:var(--blue-d); border-bottom:1px solid transparent; }
+  .media li a:hover{ border-color:var(--blue-d); }
+  .media li span{ color:var(--muted); font-size:.86rem; display:block; font-weight:300; }
+
+  /* Kontakt */
+  .kontakt{ background:var(--navy); color:var(--linen); }
+  .kontakt .wrap{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,5vw,74px); align-items:center; }
+  .kontakt h2{ color:var(--linen); font-size:clamp(2rem,4.4vw,3.2rem); margin:20px 0 22px; }
+  .kontakt h2 em{ font-style:italic; color:var(--blue-soft); }
+  .kontakt .lead{ color:rgba(250,247,242,.78); font-weight:300; margin-bottom:28px; }
+  .krow{ display:grid; grid-template-columns:100px 1fr; gap:14px; padding:16px 0; border-top:1px solid var(--line-d); align-items:baseline; }
+  .krow:last-of-type{ border-bottom:1px solid var(--line-d); }
+  .krow .k{ font-size:.66rem; letter-spacing:.18em; text-transform:uppercase; color:rgba(250,247,242,.56); }
+  .krow .v{ font-size:1.02rem; color:var(--linen); }
+  .krow .v a{ border-bottom:1px solid rgba(250,247,242,.3); }
+  .krow .v a:hover{ border-color:var(--linen); }
+  .kmap{ border-radius:2px; overflow:hidden; }
+  .kmap iframe{ width:100%; min-height:clamp(300px,40vw,450px); border:0; display:block; filter:grayscale(.4) contrast(1.02); }
+
+  footer{ background:var(--navy-2); color:rgba(250,247,242,.6); padding:clamp(48px,6vw,70px) 0 32px; }
+  .ftop{ display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:clamp(26px,4vw,46px); padding-bottom:34px; border-bottom:1px solid var(--line-d); }
+  footer .brand b{ color:var(--linen); }
+  footer .fab{ margin-top:15px; max-width:310px; font-weight:300; font-size:.91rem; }
+  footer h5{ font-size:.66rem; letter-spacing:.2em; text-transform:uppercase; color:var(--linen); margin-bottom:15px; font-weight:600; }
+  footer .fcol a,footer .fcol p{ display:block; font-size:.91rem; margin-bottom:10px; font-weight:300; }
+  footer .fcol a:hover{ color:var(--linen); }
+  .fbot{ display:flex; justify-content:space-between; padding-top:24px; font-size:.75rem; color:rgba(250,247,242,.42); flex-wrap:wrap; gap:8px; }
+
+  /* Sticky mobil */
+  .mbar{ display:none; position:fixed; bottom:0; left:0; right:0; z-index:80; background:rgba(31,42,56,.97); backdrop-filter:blur(14px);
+    padding:11px 13px calc(11px + env(safe-area-inset-bottom)); gap:11px; border-top:1px solid var(--line-d); }
+  .mbar a{ flex:1; display:flex; align-items:center; justify-content:center; gap:9px; padding:15px 8px; border-radius:2px; font-size:.85rem; font-weight:500; }
+  .mbar svg{ width:16px; height:16px; }
+  .mbar .c1{ background:transparent; color:var(--linen); border:1px solid rgba(250,247,242,.4); }
+  .mbar .c2{ background:var(--linen); color:var(--navy); }
+
+  .reveal{ opacity:0; transform:translateY(24px); transition:opacity .85s cubic-bezier(.2,.7,.2,1),transform .85s cubic-bezier(.2,.7,.2,1); }
+  .reveal.in{ opacity:1; transform:none; }
+
+  @media(max-width:1040px){
+    .navlinks{ display:none; }
+    .burger{ display:flex; }
+    .topbar .r{ display:none; } .topbar .wrap{ justify-content:center; }
+    .hero .wrap{ grid-template-columns:1fr; gap:40px; }
+    .why .wrap{ grid-template-columns:1fr; gap:24px; }
+    .tgrid{ grid-template-columns:1fr 1fr; }
+    .sexologi .wrap{ grid-template-columns:1fr; }
+    .om .wrap{ grid-template-columns:1fr; }
+    .mgrid{ grid-template-columns:1fr; }
+    .media .cols{ grid-template-columns:1fr; }
+    .kontakt .wrap{ grid-template-columns:1fr; }
+    .ftop{ grid-template-columns:1fr 1fr; }
+  }
+  @media(max-width:640px){
+    body{ padding-bottom:78px; }
+    nav{ height:72px; }
+    .brand b{ font-size:1.3rem; }
+    .hero-fig .yrs{ left:0; bottom:-16px; padding:16px 20px; }
+    .hero-btns{ width:100%; } .hero-btns .btn{ flex:1; min-width:0; padding:15px 16px; }
+    .reasons{ grid-template-columns:1fr; }
+    .tgrid{ grid-template-columns:1fr; }
+    .prow{ grid-template-columns:1fr; gap:6px; }
+    .prow .pp{ font-size:1.4rem; }
+    .krow{ grid-template-columns:1fr; gap:3px; }
+    .ftop{ grid-template-columns:1fr; gap:26px; }
+    .fbot{ justify-content:center; text-align:center; }
+    .mbar{ display:flex; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Leg. psykoterapeut · Auktoriserad klinisk sexolog (NACS)</span>
+    <div class="r">
+      <a href="tel:+46733447422">0733-44 74 22</a>
+      <a href="mailto:siw@siwblomterapi.se">siw@siwblomterapi.se</a>
+    </div>
+  </div>
+</div>
+
+<header id="hdr">
+  <nav class="wrap">
+    <a href="#top" class="brand"><b>Siw Blom</b><small>Terapi &amp; samtalsrum · Varberg</small></a>
+    <ul class="navlinks" id="navlinks">
+      <li class="has-sub">
+        <button class="subt" type="button" aria-haspopup="true">Mottagningen
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="submenu">
+          <li><a href="#tjanster">Individuella samtal</a></li>
+          <li><a href="#tjanster">Parsamtal</a></li>
+          <li><a href="#sexologi">Sexualterapi</a></li>
+          <li><a href="#tjanster">Handledning</a></li>
+          <li><a href="#tjanster">Utbildningsterapi</a></li>
+        </ul>
+      </li>
+      <li><a href="#om">Om mig</a></li>
+      <li><a href="#meriter">Utbildning</a></li>
+      <li><a href="#priser">Priser</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="#kontakt" class="btn btn-navy" style="padding:11px 22px">Boka samtal</a></li>
+    </ul>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Psykoterapi &amp; sexualterapi · Varberg</div>
+      <h1>Ett tryggt rum för <em>samtal</em>.</h1>
+      <p class="lead">Vi möts med fokus på dig och dina behov. Enskilt eller som flersam.<br>Jag erbjuder även handledning enskilt eller till grupp om du är verksam i människovårdande yrke.</p>
+      <div class="hero-btns">
+        <a href="#kontakt" class="btn btn-navy">Boka ett samtal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a href="#tjanster" class="btn btn-ol">Se mottagningen</a>
+      </div>
+      <div class="creds">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Legitimerad psykoterapeut, psykodynamisk inriktning</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Auktoriserad klinisk sexolog enligt NACS</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Samtal på plats i Varberg eller digitalt</div>
+      </div>
+    </div>
+    <div class="hero-fig reveal">
+      <img src="https://images.unsplash.com/photo-1615194787278-25ca9b7c5a16?auto=format&fit=crop&w=1100&q=80" alt="Ett lugnt samtalsrum" loading="eager" decoding="async">
+      <div class="yrs"><b>50 år</b><span>i människovårdande yrken</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="wrap">
+    <span>Leg. psykoterapeut</span><span class="dot">·</span>
+    <span>Klinisk sexolog</span><span class="dot">·</span>
+    <span>Leg. barnmorska</span><span class="dot">·</span>
+    <span>Leg. sjuksköterska</span><span class="dot">·</span>
+    <span>Handledare</span>
+  </div>
+</div>
+
+<!-- ANLEDNINGAR -->
+<section class="why" id="anledningar">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Vad du kan söka för</div>
+      <h2>Du behöver inte veta <em>var du ska börja</em>.</h2>
+    </div>
+    <div class="reveal">
+      <p class="intro">Till mig kan du komma för vägledande samtal och psykoterapi vid exempelvis:</p>
+      <div class="reasons">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Depression</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Utmattningssyndrom</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Ångest</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Livskriser</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Relationsproblem i kärleksrelationen</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Föräldra–barn-relationen</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Sexuell hälsa och lust</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg> Trauma och anknytning</div>
+      </div>
+      <p style="margin-top:26px;color:var(--muted);font-weight:300">I vårt samtal vilar jag på min breda teoretiska och kliniska erfarenhet. Min grundplattform finns inom den psykodynamiska teoribildningen, som jag vid behov kompletterar med symbolernas omedvetna kraft eller strukturen inom kognitiv beteendeterapi.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MOTTAGNINGEN -->
+<section class="tjanster" id="tjanster">
+  <div class="wrap">
+    <div class="sec-head c reveal">
+      <div class="eyebrow c">Mottagningen</div>
+      <h2>Så kan vi <em>arbeta tillsammans</em>.</h2>
+      <p>Alla samtal kan ske på plats i Varberg eller digitalt, om det passar dig bättre.</p>
+    </div>
+    <div class="tgrid">
+      <div class="tcard reveal">
+        <span class="n">01</span><h3>Individuella samtal</h3>
+        <p>Ett enskilt samtalsrum för dig — vid nedstämdhet, ångest, utmattning, livskris eller när något behöver sättas ord på.</p>
+        <div class="pr">950 kr <small>60 minuter</small></div>
+      </div>
+      <div class="tcard reveal">
+        <span class="n">02</span><h3>Parsamtal</h3>
+        <p>För er som vill förstå varandra bättre. Jag arbetar bland annat med emotionellt fokuserad terapi (EFT) för par.</p>
+        <div class="pr">1 200 kr <small>75 minuter</small></div>
+      </div>
+      <div class="tcard reveal">
+        <span class="n">03</span><h3>Samtal för ungdom</h3>
+        <p>Ett eget rum för dig som är ung, med samma trygghet och tystnadsplikt.</p>
+        <div class="pr">500 kr <small>60 minuter</small></div>
+      </div>
+      <div class="tcard reveal">
+        <span class="n">04</span><h3>Telefonrådgivning</h3>
+        <p>Korta frågor eller en första kontakt innan du bestämmer dig — utan att boka ett helt samtal.</p>
+        <div class="pr">200 kr <small>30 minuter</small></div>
+      </div>
+      <div class="tcard reveal">
+        <span class="n">05</span><h3>Handledning</h3>
+        <p>Individuellt eller i grupp, för dig i människovårdande yrke. Godkänd handledare även för sexologiska frågeställningar.</p>
+        <div class="pr">Offert <small>Pris enligt överenskommelse</small></div>
+      </div>
+      <div class="tcard reveal">
+        <span class="n">06</span><h3>Utbildningsterapi</h3>
+        <p>Egenterapi i samband med människovårdande utbildning.</p>
+        <div class="pr">950 kr <small>60 minuter</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEXOLOGI -->
+<section class="sexologi" id="sexologi">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow light">Sexualterapeutisk mottagning</div>
+      <h2>Frågor om sexualitet <em>hör hemma här</em>.</h2>
+      <p>Sexuell hälsa är en del av hälsan i stort — men få rum finns där den går att prata om. Som auktoriserad klinisk sexolog enligt NACS möter jag dessa frågor med samma saklighet som alla andra.</p>
+      <div class="taglist">
+        <span>Lust och olust</span>
+        <span>Samlagssmärta</span>
+        <span>Sviktande erektion</span>
+        <span>Tidig utlösning</span>
+        <span>Hypersexualitet</span>
+        <span>Porrberoende</span>
+        <span>Oönskat tändningsmönster</span>
+        <span>Sexuell läggning</span>
+        <span>Könsidentitet</span>
+        <span>Sexuellt trauma</span>
+      </div>
+      <div class="note">Jag samarbetar med <b style="color:var(--linen);font-weight:500">Falck HK</b> och <b style="color:var(--linen);font-weight:500">S:t Lukas</b>.</div>
+    </div>
+    <div class="sexologi-fig reveal">
+      <img src="https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?auto=format&fit=crop&w=1000&q=80" alt="Stillsam horisont" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- OM MIG -->
+<section class="om" id="om">
+  <div class="wrap">
+    <div class="om-fig reveal">
+      <img src="https://siwblomterapi.se/wp-content/uploads/2020/08/Siw-3-cropped-698x1024.jpg" alt="Siw Blom, legitimerad psykoterapeut och auktoriserad klinisk sexolog" loading="lazy" decoding="async">
+      <div class="om-cap">Siw Blom · Leg. psykoterapeut &amp; klinisk sexolog</div>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">Om mig</div>
+      <h2>Jag heter <em>Siw Blom</em>.</h2>
+      <p>Jag har arbetat inom vården sedan jag var 18 år och har fortlöpande utbildat mig — till mentalskötare, sjuksköterska, barnmorska, legitimerad psykoterapeut, symbolterapeut, klinisk sexolog och handledare.</p>
+      <p>Som barnmorska har jag arbetat inom mödravård, förlossning, BB, ungdomsmottagning och gynmottagning. Som sjuksköterska inom hematologi, njurmedicin, kardiologi, allmänmedicin och cancervård. Inom sluten psykiatrisk vård har jag mött människor med depression, ångest, fobi, utbrändhet, beroendeproblematik och livskriser.</p>
+      <p>Under många år arbetade jag med familjer och blivande familjer på spädbarnsenheter — med den komplexitet som den fasen i livet innebär, inte sällan med traumatisering och svårigheter i anknytningen.</p>
+      <div class="sig">”Min ambition är att genuint möta den person jag samtalar med.”</div>
+    </div>
+  </div>
+</section>
+
+<!-- MERITER -->
+<section class="meriter" id="meriter">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Utbildning &amp; behörighet</div>
+      <h2>Meriter du kan <em>luta dig mot</em>.</h2>
+    </div>
+    <div class="mgrid reveal">
+      <div>
+        <div class="mrow"><span class="mi">01</span><div><b>Legitimerad psykoterapeut</b><span>3-årig legitimationsgrundande utbildning, psykodynamisk inriktning — S:t Lukas, Göteborg</span></div></div>
+        <div class="mrow"><span class="mi">02</span><div><b>Auktoriserad klinisk sexolog</b><span>Enligt NACS — Nordic Association for Clinical Sexology</span></div></div>
+        <div class="mrow"><span class="mi">03</span><div><b>Symbolterapeut</b><span>2-årig utbildning på Symbolon i Fjärås</span></div></div>
+        <div class="mrow"><span class="mi">04</span><div><b>Legitimerad barnmorska</b><span>Mödravård, förlossning, BB, ungdoms- och gynmottagning</span></div></div>
+        <div class="mrow"><span class="mi">05</span><div><b>Legitimerad sjuksköterska</b><span>Flera somatiska specialinriktningar</span></div></div>
+      </div>
+      <div>
+        <div class="mrow"><span class="mi">06</span><div><b>Parterapi — EFT</b><span>Emotionellt fokuserad terapi, grund- och fortsättningsutbildning</span></div></div>
+        <div class="mrow"><span class="mi">07</span><div><b>Traumautbildning</b><span>Lifespan Integration del 1, 2 och 3 samt Deep Brain Reorienting, DBR Steg 1</span></div></div>
+        <div class="mrow"><span class="mi">08</span><div><b>Handledarutbildning PDT</b><span>2-årig, 45 hp — Ericastiftelsen, Stockholm</span></div></div>
+        <div class="mrow"><span class="mi">09</span><div><b>Godkänd handledare</b><span>För sexologisk frågeställning — Svensk Förening för Sexologi</span></div></div>
+        <div class="mrow"><span class="mi">10</span><div><b>50 års erfarenhet</b><span>Inom människovårdande yrken</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CITAT -->
+<section class="quote">
+  <div class="wrap reveal">
+    <p>”Under mina 50 år har jag haft ambitionen att fördjupa mig, lära mig mer — och att genuint möta den person jag samtalar med.”</p>
+    <div class="who">Siw Blom</div>
+  </div>
+</section>
+
+<!-- PRISER -->
+<section id="priser">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Priser</div>
+      <h2>Tydligt och <em>utan överraskningar</em>.</h2>
+    </div>
+    <div class="ptable reveal">
+      <div class="prow"><div><span class="pn">Individuella samtal</span><span class="pd">60 minuter</span></div><div class="pp">950 kr</div></div>
+      <div class="prow"><div><span class="pn">Parsamtal</span><span class="pd">75 minuter</span></div><div class="pp">1 200 kr</div></div>
+      <div class="prow"><div><span class="pn">Ungdom</span><span class="pd">60 minuter</span></div><div class="pp">500 kr</div></div>
+      <div class="prow"><div><span class="pn">Telefonrådgivning</span><span class="pd">30 minuter</span></div><div class="pp">200 kr</div></div>
+      <div class="prow"><div><span class="pn">Handledning</span><span class="pd">Individuellt eller i grupp</span></div><div class="pp">Enligt ök.</div></div>
+    </div>
+    <p class="pnote reveal"><b>Samtal erbjuds även digitalt.</b><br><strong>Vid avbokning senare än 24 timmar före besöket debiteras 400 kr.</strong></p>
+  </div>
+</section>
+
+<!-- MEDIA -->
+<section class="media" style="background:var(--linen-2)">
+  <div class="wrap">
+    <div class="cols">
+      <div class="reveal">
+        <h3>I media</h3>
+        <ul>
+          <li><a href="https://lovebuddy.se/bra-relation-tips/" target="_blank" rel="noopener">Hur får man en bra relation?</a><span>Mina och 12 andra experters råd — Lovebuddy</span></li>
+          <li>Siw möter personer med sexuella problem<span>Hallands Nyheter</span></li>
+          <li>Därför skiljer sig hallänningarna — så räddas relationen<span>P4 Halland</span></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <h3>Samarbetspartners</h3>
+        <ul>
+          <li>Falck HK</li>
+          <li>S:t Lukas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="kontakt" id="kontakt">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow light">Kontakt</div>
+      <h2>Ta det <em>första steget</em>.</h2>
+      <p class="lead">Hör av dig med ett samtal eller ett mejl, så återkommer jag. Du behöver inte ha formulerat allt på förhand — det gör vi tillsammans.</p>
+      <div class="krow"><div class="k">Adress</div><div class="v">Norrgatan 20, 432 41 Varberg</div></div>
+      <div class="krow"><div class="k">Telefon</div><div class="v"><a href="tel:+46733447422">0733-44 74 22</a></div></div>
+      <div class="krow"><div class="k">E-post</div><div class="v"><a href="mailto:siw@siwblomterapi.se">siw@siwblomterapi.se</a></div></div>
+      <div class="krow"><div class="k">Form</div><div class="v">På mottagningen i Varberg eller digitalt</div></div>
+      <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
+        <a href="tel:+46733447422" class="btn btn-linen">Ring mig <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a href="mailto:siw@siwblomterapi.se" class="btn btn-olw">Skicka e-post</a>
+      </div>
+    </div>
+    <div class="kmap reveal">
+      <iframe loading="lazy" src="https://www.google.com/maps?q=Norrgatan%2020,%20432%2041%20Varberg&output=embed" title="Karta till mottagningen i Varberg"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ftop">
+      <div>
+        <div class="brand"><b>Siw Blom</b><small>Terapi &amp; samtalsrum · Varberg</small></div>
+        <p class="fab">Psykoterapi och sexualterapeutisk mottagning. Legitimerad psykoterapeut och auktoriserad klinisk sexolog enligt NACS.</p>
+      </div>
+      <div class="fcol">
+        <h5>Mottagningen</h5>
+        <a href="#tjanster">Individuella samtal</a>
+        <a href="#tjanster">Parsamtal</a>
+        <a href="#sexologi">Sexualterapi</a>
+        <a href="#tjanster">Handledning</a>
+      </div>
+      <div class="fcol">
+        <h5>Kontakt</h5>
+        <a href="tel:+46733447422">0733-44 74 22</a>
+        <a href="mailto:siw@siwblomterapi.se">siw@siwblomterapi.se</a>
+        <p>Norrgatan 20<br>432 41 Varberg</p>
+      </div>
+    </div>
+    <div class="fbot"><span>© 2026 Siw Blom Terapi o Samtalsrum</span><span>Varberg · Halland</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+46733447422" class="c1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Ring</a>
+  <a href="mailto:siw@siwblomterapi.se" class="c2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg> Boka samtal</a>
+</div>
+
+<script>
+  var hdr=document.getElementById('hdr');
+  window.addEventListener('scroll',function(){ hdr.classList.toggle('scrolled', window.scrollY>10); },{passive:true});
+
+  var burger=document.getElementById('burger'), nl=document.getElementById('navlinks');
+  burger.addEventListener('click',function(){
+    var open=nl.style.display==='flex';
+    nl.style.display=open?'':'flex';
+    if(!open){ nl.style.position='fixed'; nl.style.inset='0'; nl.style.flexDirection='column';
+      nl.style.alignItems='center'; nl.style.justifyContent='center'; nl.style.gap='8px';
+      nl.style.background='var(--linen)'; nl.style.zIndex='95'; nl.style.padding='90px 26px 40px'; nl.style.overflowY='auto';
+      burger.style.position='relative'; burger.style.zIndex='100';
+      nl.querySelectorAll('a,.subt').forEach(function(a){ a.style.fontSize='1.16rem'; a.style.padding='12px 0'; });
+    } else { nl.removeAttribute('style'); }
+  });
+  document.querySelectorAll('.navlinks li.has-sub').forEach(function(li){
+    var t=li.querySelector('.subt'), sm=li.querySelector('.submenu');
+    t.addEventListener('click',function(e){
+      if(window.innerWidth<=1040){
+        e.preventDefault();
+        var open=sm.style.display==='block';
+        sm.style.display=open?'':'block';
+        if(!open){ sm.style.position='static'; sm.style.transform='none'; sm.style.opacity='1';
+          sm.style.visibility='visible'; sm.style.pointerEvents='auto'; sm.style.boxShadow='none';
+          sm.style.border='0'; sm.style.background='transparent'; sm.style.textAlign='center'; sm.style.margin='2px 0 10px'; }
+      }
+    });
+  });
+  document.querySelectorAll('#navlinks a').forEach(function(a){
+    a.addEventListener('click',function(){ if(window.innerWidth<=1040){ nl.removeAttribute('style'); } });
+  });
+
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>
