@@ -195,6 +195,19 @@
   .mrow b{ display:block; font-weight:500; color:var(--navy); font-size:1rem; }
   .mrow span{ color:var(--muted); font-size:.88rem; font-weight:300; }
 
+  /* Vägval */
+  .vagval{ background:var(--navy); color:var(--linen); padding:0; overflow:hidden; }
+  .vagval .wrap{ display:grid; grid-template-columns:minmax(0,1.45fr) minmax(300px,.75fr); gap:0; max-width:1320px; padding:0; align-items:stretch; }
+  .vagval-fig{ min-height:clamp(420px,54vw,680px); overflow:hidden; position:relative; }
+  .vagval-fig::after{ content:""; position:absolute; inset:0; background:linear-gradient(90deg,transparent 58%,rgba(31,42,56,.22)); pointer-events:none; }
+  .vagval-fig img{ width:100%; height:100%; min-height:inherit; object-fit:cover; object-position:center; display:block; }
+  .vagval-copy{ display:flex; flex-direction:column; justify-content:center; padding:clamp(48px,6vw,88px) clamp(30px,5vw,72px); }
+  .vagval .eyebrow{ color:var(--blue-soft); }
+  .vagval h2{ color:var(--linen); font-size:clamp(2rem,4vw,3.25rem); margin:20px 0 22px; }
+  .vagval h2 em{ color:var(--blue-soft); font-style:italic; }
+  .vagval p{ color:rgba(250,247,242,.76); font-weight:300; font-size:1.02rem; }
+  .vagval-line{ width:54px; height:1px; background:var(--blue-soft); margin-top:30px; }
+
   /* Priser */
   .ptable{ border-top:1px solid var(--line); max-width:900px; }
   .prow{ display:grid; grid-template-columns:1fr auto; gap:20px; padding:22px 4px; border-bottom:1px solid var(--line); align-items:baseline; }
@@ -233,6 +246,7 @@
   .krow .v a:hover{ border-color:var(--linen); }
   .kmap{ border-radius:2px; overflow:hidden; }
   .kmap iframe{ width:100%; min-height:clamp(300px,40vw,450px); border:0; display:block; filter:grayscale(.4) contrast(1.02); }
+  .kmap img{ width:100%; height:clamp(380px,48vw,560px); object-fit:cover; object-position:center 56%; display:block; }
 
   footer{ background:var(--navy-2); color:rgba(250,247,242,.6); padding:clamp(48px,6vw,70px) 0 32px; }
   .ftop{ display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:clamp(26px,4vw,46px); padding-bottom:34px; border-bottom:1px solid var(--line-d); }
@@ -264,6 +278,9 @@
     .sexologi .wrap{ grid-template-columns:1fr; }
     .om .wrap{ grid-template-columns:1fr; }
     .mgrid{ grid-template-columns:1fr; }
+    .vagval .wrap{ grid-template-columns:1fr; }
+    .vagval-fig{ min-height:clamp(360px,72vw,560px); }
+    .vagval-fig::after{ background:linear-gradient(0deg,rgba(31,42,56,.18),transparent 42%); }
     .media .cols{ grid-template-columns:1fr; }
     .kontakt .wrap{ grid-template-columns:1fr; }
     .ftop{ grid-template-columns:1fr 1fr; }
@@ -278,6 +295,8 @@
     .tgrid{ grid-template-columns:1fr; }
     .prow{ grid-template-columns:1fr; gap:6px; }
     .prow .pp{ font-size:1.4rem; }
+    .vagval-fig{ min-height:76vw; }
+    .vagval-copy{ padding:42px 24px 50px; }
     .krow{ grid-template-columns:1fr; gap:3px; }
     .ftop{ grid-template-columns:1fr; gap:26px; }
     .fbot{ justify-content:center; text-align:center; }
@@ -314,7 +333,7 @@
         </ul>
       </li>
       <li><a href="#om">Om mig</a></li>
-      <li><a href="#meriter">Utbildning</a></li>
+      <li><a href="#meriter">Meriter</a></li>
       <li><a href="#priser">Priser</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
       <li><a href="#kontakt" class="btn btn-navy" style="padding:11px 22px">Boka samtal</a></li>
@@ -341,7 +360,7 @@
       </div>
     </div>
     <div class="hero-fig reveal">
-      <img src="https://images.unsplash.com/photo-1723924880480-a5433b2819ca?auto=format&fit=crop&w=1600&q=85" alt="Hav, klippor och fyr i Öckerös skärgård på västkusten" loading="eager" decoding="async">
+      <img src="https://images.unsplash.com/photo-1723924880480-a5433b2819ca?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="Havet, klipporna och livbojen vid västkusten" loading="eager" decoding="async">
       <div class="yrs"><b>50 år</b><span>i människovårdande yrken</span></div>
     </div>
   </div>
@@ -423,9 +442,8 @@
 <section class="sexologi" id="sexologi">
   <div class="wrap">
     <div class="reveal">
-      <div class="eyebrow light">Sexualterapeutisk mottagning</div>
       <h2>Frågor om sexualitet <em>hör hemma här</em>.</h2>
-      <p>Sexuell hälsa är en del av hälsan i stort — men få rum finns där den går att prata om. Som auktoriserad klinisk sexolog enligt NACS möter jag dessa frågor med samma saklighet som alla andra.</p>
+      <p>Sexuell hälsa är en viktig del av hälsan i stort — men få rum finns där den går att prata om. Som auktoriserad klinisk sexolog enligt NACS möter jag dessa frågor med samma saklighet som alla andra.</p>
       <div class="taglist">
         <span>Lust och olust</span>
         <span>Samlagssmärta</span>
@@ -437,10 +455,6 @@
         <span>Sexuell läggning</span>
         <span>Könsidentitet</span>
         <span>Sexuellt trauma</span>
-      </div>
-      <div class="note">
-        <span class="note-label">Samarbetspartners</span>
-        <span class="note-text">Jag samarbetar med <strong>Falck HK</strong> och <strong>S:t Lukas</strong>.</span>
       </div>
     </div>
     <div class="sexologi-fig reveal">
@@ -462,7 +476,7 @@
       <p>Jag har arbetat inom vården sedan jag var 18 år och har fortlöpande utbildat mig — till mentalskötare, sjuksköterska, barnmorska, legitimerad psykoterapeut, symbolterapeut, klinisk sexolog och handledare.</p>
       <p>Som barnmorska har jag arbetat inom mödravård, förlossning, BB, ungdomsmottagning och gynmottagning. Som sjuksköterska inom hematologi, njurmedicin, kardiologi, allmänmedicin och cancervård. Inom sluten psykiatrisk vård har jag mött människor med depression, ångest, fobi, utbrändhet, beroendeproblematik och livskriser.</p>
       <p>Under många år arbetade jag med familjer och blivande familjer på spädbarnsenheter — med den komplexitet som den fasen i livet innebär, inte sällan med traumatisering och svårigheter i anknytningen.</p>
-      <div class="sig">”Min ambition är att genuint möta den person jag samtalar med.”</div>
+      <div class="sig">”En av mina ambitioner är att skapa ett tryggt och utforskande klimat i varje samtal.”</div>
     </div>
   </div>
 </section>
@@ -471,8 +485,7 @@
 <section class="meriter" id="meriter">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="eyebrow">Utbildning &amp; behörighet</div>
-      <h2>Meriter du kan <em>luta dig mot</em>.</h2>
+      <h2>Mina <em>meriter</em>.</h2>
     </div>
     <div class="mgrid reveal">
       <div>
@@ -493,10 +506,25 @@
   </div>
 </section>
 
+<!-- VÄGVAL -->
+<section class="vagval" aria-labelledby="vagval-title">
+  <div class="wrap">
+    <figure class="vagval-fig reveal">
+      <img src="siw-blom-stigar.png" alt="Två skogsstigar som delar sig och leder vidare genom grönskan" loading="lazy" decoding="async">
+    </figure>
+    <div class="vagval-copy reveal">
+      <div class="eyebrow">När vägen delar sig</div>
+      <h2 id="vagval-title">Du behöver inte veta vägen <em>innan samtalet börjar</em>.</h2>
+      <p>Ibland handlar ett första steg om att stanna upp, få syn på alternativen och hitta en riktning som känns möjlig.</p>
+      <div class="vagval-line" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
 <!-- CITAT -->
 <section class="quote">
   <div class="wrap reveal">
-    <p>”Under mina 50 år har jag haft ambitionen att fördjupa mig, lära mig mer — och att genuint möta den person jag samtalar med.”</p>
+    <p>”Under mina år inom vården har jag haft, och har fortfarande, en ambition att lära mig nytt, fördjupa mig och genuint möta den person jag samtalar med.”</p>
     <div class="who">Siw Blom</div>
   </div>
 </section>
@@ -506,7 +534,6 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="eyebrow">Priser</div>
-      <h2>Tydligt och <em>utan överraskningar</em>.</h2>
     </div>
     <div class="ptable reveal">
       <div class="prow"><div><span class="pn">Individuella samtal</span><span class="pd">60 minuter</span></div><div class="pp">950 kr</div></div>
@@ -559,7 +586,7 @@
       </div>
     </div>
     <div class="kmap reveal">
-      <iframe loading="lazy" src="https://www.google.com/maps?q=Norrgatan%2020,%20432%2041%20Varberg&output=embed" title="Karta till mottagningen i Varberg"></iframe>
+      <img src="siw-entre-micki.jpg" alt="Den röda entrédörren till Norrgatans psykoterapi och sexologiska mottagning, med hunden Micki utanför" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
